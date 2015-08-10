@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/preview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/popwin_btn_click"
+            android:gravity="center"
+            android:text="预览"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/advert_from_pic_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/popwin_btn_click"
+            android:gravity="center"
+            android:text="@string/from_pic_text"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/advert_from_camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/popwin_btn_click"
+            android:gravity="center"
+            android:text="@string/from_camera_text"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/advert_delete_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/popwin_btn_click"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/advert_cancle_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click2"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/edittext_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

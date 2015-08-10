@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chongzhishibai_btn_duihuakuang"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="45dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/lock_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:scaleType="center"
+            android:src="@drawable/img_lock_3" />
+
+        <TextView
+            android:id="@+id/have_gold_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="祝贺你获得1把金锁"
+            android:textColor="@color/edittext_color"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/edit_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp" >
+
+            <ImageView
+                android:id="@+id/lock1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/img_lock_1"
+                android:textSize="@dimen/edittext_size" />
+
+            <TextView
+                android:id="@+id/number_handful"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="3把"
+                android:textColor="@color/edittext_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/lock2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/img_lock_2"
+                android:textSize="@dimen/edittext_size" />
+
+            <TextView
+                android:id="@+id/number_handful2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="2把"
+                android:textColor="@color/edittext_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/lock3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/img_lock_3"
+                android:textSize="@dimen/edittext_size" />
+
+            <TextView
+                android:id="@+id/number_handful3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="3把"
+                android:textColor="@color/edittext_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@anim/dialog_btn_selector"
+                android:gravity="center"
+                android:text="关闭"
+                android:textSize="@dimen/edittext_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

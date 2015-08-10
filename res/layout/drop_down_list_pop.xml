@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <ListView
+        android:id="@+id/lv_drop_down_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_margin="5dip"
+        android:scrollbars="none"
+        android:listSelector="#D3D3D3">
+    </ListView>
+
+</RelativeLayout>

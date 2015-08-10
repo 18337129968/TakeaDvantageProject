@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scoreboard"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_integral_top_selecte"
+            android:text="拍币榜"
+            android:textColor="#99ffffff"
+            android:textSize="16dip" />
+
+        <Button
+            android:id="@+id/recommended_list"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@drawable/btn_integral_top_selecte"
+            android:text="推荐榜"
+            android:textColor="#99ffffff"
+            android:textSize="16dip" />
+        <Button
+            android:id="@+id/integral_wall_list"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@drawable/btn_integral_top_selecte"
+            android:text="APP榜"
+            android:textColor="#99ffffff"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

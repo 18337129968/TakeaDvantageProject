@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color" >
+    <LinearLayout 
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        ></LinearLayout>
+        
+    <LinearLayout 
+        android:layout_below="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ll_buttom"
+        >
+        <ListView 
+            android:id="@+id/new_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/bg_line"
+            ></ListView>
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/ll_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/btn_new"
+            android:text="@string/tc_btn_new"
+            android:background="@anim/btn_new"
+            android:textSize="@dimen/edittext_size"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</RelativeLayout>

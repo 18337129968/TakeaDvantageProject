@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2B2D2C"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="提现金额"
+            android:textSize="@dimen/edittext_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/withdrawals_money_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20.00"
+                android:textColor="#9F394F"
+                android:textSize="@dimen/edittext_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="选择银行"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_bank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2B2D2C"
+        android:gravity="center|left"
+        android:paddingRight="10dp" 
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" />
+
+        <Spinner
+            android:background="@drawable/pro_spinner"
+            android:id="@+id/pro_spinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center|right"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#2B2D2C"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="姓名"
+            android:textSize="@dimen/edittext_size" />
+
+        <EditText
+            android:id="@+id/withdrawals_name_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/edittextbg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="11"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#2B2D2C"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="卡号"
+            android:textSize="@dimen/edittext_size" />
+
+        <EditText
+            android:id="@+id/withdrawals_cardcode_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/edittextbg"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="20"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#2B2D2C"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="提现费用"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/withdrawals_fee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:text="0"
+            android:textColor="#9F394F"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/withdrawals_now_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_click2"
+            android:gravity="center"
+            android:text="立即提现"
+            android:textColor="@color/edittext_color"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

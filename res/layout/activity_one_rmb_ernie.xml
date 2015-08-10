@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/one_rmb_home_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dark"
+            android:gravity="center"
+            android:text="摇奖大厅"
+            android:textColor="#FFFDFA"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/await_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dark"
+            android:gravity="center"
+            android:text="等待揭晓"
+            android:textColor="#FFFDFA"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/joined_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dark"
+            android:gravity="center"
+            android:text="我的参与"
+            android:textColor="#FFFDFA"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/one_rmb_ernie_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

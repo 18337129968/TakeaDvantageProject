@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/tv_select_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_l"
+        android:hint="选择要晒的奖品"
+        android:paddingLeft="10dip"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"/>
+    <ImageButton
+        android:id="@+id/iv_select_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_class"
+        android:layout_alignRight="@id/tv_select_des"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"/>
+
+</RelativeLayout>

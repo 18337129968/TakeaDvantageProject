@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/get_integral_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/addadress_btn_ensureorcanceladress_1"
+            android:gravity="center"
+            android:text="获得拍币"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/expend_integral_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/addadress_btn_ensureorcancealdress_2"
+            android:gravity="center"
+            android:text="消耗拍币"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/integral_vPager"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:layout_gravity="center"
+       android:layout_weight="1.0"
+       android:flipInterval="30"
+       android:persistentDrawingCache="animation" />
+
+</LinearLayout>

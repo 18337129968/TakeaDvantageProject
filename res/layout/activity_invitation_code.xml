@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/invitation_code_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="@string/invitation_code_hint"
+        android:maxLength="6"
+        android:paddingLeft="@dimen/edittext_padding_left_size"
+        android:paddingRight="@dimen/edittext_padding_right_size"
+        android:textColor="@color/edittext_color"
+        android:textColorHint="@color/edittext_color_hint"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/edittext_size" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invitation_code_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/invitation_code_textview"
+        android:textColor="#88706C"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/register_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click2"
+        android:gravity="center"
+        android:text="@string/register_ok_btn_text"
+        android:textColor="@color/edittext_color"
+        android:textSize="@dimen/edittext_size" />
+
+    <LinearLayout
+        android:id="@+id/invitation_skip_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_done_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip_done_text"
+            android:textColor="@color/edittext_color"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_jumptonext" />
+
+    </LinearLayout>
+
+</RelativeLayout>

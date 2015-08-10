@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jishijiyu.takeadvantage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 环信 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.jishijiyu.takeadvantage.activity.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KaGul9UA5yIFTYUm3eCzOt8z" />
+        <meta-data
+            android:name="com.dianle.cid"
+            android:value="default" />
+
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.home.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.ExchangeDetailsActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.RuleActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.ErnieActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.mytask.TaskActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.login.LoginActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.login.ForgotPasswordActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.login.RegisterActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.login.InvitationCodeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.login.UserAgreeMentActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.makemoney.WatchAdvertisementActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.makemoney.AnswerQuestionsActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.makemoney.IntegralWallActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.makemoney.SoftwareActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.MyInfomationActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.MyBasicInfomationActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.RechargeGoldActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.ExchangemallActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.OneRmbHomeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.TaoCanPrizeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.WinPrizeInfomationActivity" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.OneRmbErnieActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.RegistrationDetailActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.SelectBusinessTradeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.SelectTradeSubSectionActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.MerchantAccountActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.AdvertisingActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.AccountManagerActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.AccountRechargeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.MyAdvertActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.UserAgreement" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.MerchantStateFailureActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.MerchantStateReviewActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.ApplyForMerchantSucceedActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.NotMerchantActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.AccountWithdrawalsActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.MerchantMapActivity" >
+        </activity>
+        <activity android:name="com.jishijiyu.takeadvantage.activity.DiyOfferAdDetailActivity" >
+        </activity>
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.RoomListActivity" >
+        </activity>
+        <!-- 支付界面 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.paymoney.PayMoneyActivity" >
+        </activity>
+        <activity android:name="com.jishijiyu.takeadvantage.activity.paymoney.PayOrderSKActivity" >
+        </activity>
+        <!-- 新建房间 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.NewRoomActivity" >
+        </activity>
+        <!-- 套餐详情 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.TaoCanDetailActivity" >
+        </activity>
+
+        <!-- 邀请好友列表 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.InviteFriendsActivity" >
+        </activity>
+        <!-- 推广管理 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.ProManagerActivity" >
+        </activity>
+        <!-- 账户充值 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.merchant_account.MentionActivity" >
+        </activity>
+        <!-- 个人中心充值界面 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.paymoney.IntegralStaticsPayMoneyActivity" >
+        </activity>
+        <!-- 商家提现 -->
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.DiscussPresentActivity" >
+        </activity>
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.home.GuiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.MyNickNameActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.makemoney.EarnPointsActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.HomeAppliancesActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.MoreAddressActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.FirmOrderActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.AddAddressActivity" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.myinformation.IntegralStatisticsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".activity.ProfessionActivity"
+            android:theme="@style/Transparent" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.PrepaidPhoneDetailsActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.AllActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.HouseholdActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.PhoneActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.PhoneCardActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.BookActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.BagsActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.MakeupActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.exchangemall.ClothingActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.ShowPriceActivity" />
+        <activity
+            android:name=".activity.exchangemall.FirmOrderPopActivity"
+            android:theme="@style/TransparentDialog" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.signin.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.my.CommonQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.my.CommonQuestionDesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.my.AboutPaiDeLiActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.my.AboutProductActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.AwardingGoodsActivity" />
+        <activity android:name=".activity.merchant_account.ApplyForMerchantStepTwoActivity" >
+        </activity>
+        <activity android:name=".activity.merchant_account.ApplyForMerchantStepOneActivity" >
+        </activity>
+        <activity android:name=".activity.my.FriendRequestActivity" >
+        </activity>
+        <activity android:name="com.jishijiyu.takeadvantage.activity.news.MyMessageActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.AppDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.showprize.ShinePrizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.showprize.ShineOneRMBPrizeDesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.CheckPriceActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.MyPriceActivity" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.showprize.ShinePrizeDesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.showprize.MineShinePrizeDesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.showprize.MineOneShinePrizeDesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.my.OrderInquiryActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.my.AboutCompanyActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.my.UseraGreementActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.my.FeedBackActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.SettingActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.ChangePasswordActivity" />
+
+        <!-- *************************    分享相关的注册 START **************************** -->
+
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.jishijiyu.takeadvantage.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5563d76767e58e2817005ad1" >
+        </meta-data>
+
+        <!-- *************************    分享相关的注册 END **************************** -->
+        <!-- 评论相关注册  START -->
+        <activity
+            android:name="com.umeng.socialize.view.CommentActivity"
+            android:configChanges="orientation|keyboard"
+            android:theme="@style/Theme.UMDefault" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetail"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetailNoMap"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault" >
+        </activity>
+        <!-- 评论相关注册  End -->
+
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myinformation.WinningPriceActivity" />
+        <activity android:name=".activity.myinformation.WinningRecordGoodsDetailActivty" >
+        </activity>
+        <activity android:name=".activity.myinformation.MoreAddressCanRemoveActivity" >
+        </activity>
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.LocksActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.paymoney.PayOrderActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernie.YiYuanErnieActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.NewFriendActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.FriendDatelActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.FriendDatel2Activity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.AddFriendActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.MerchantCodeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.FriendActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.ernieonermb.YiYuanErnieActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.AddFriend_SendMsgActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.MerchantDatalActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.ChatActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.AddMerchantCodeActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.MerchantDatal2Activity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.MessageDatalActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.BaiduMapActivity" />
+        <activity android:name="com.jishijiyu.takeadvantage.activity.myfriend.ShowBigImage" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.HX.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+
+        <receiver android:name=".broadcastReceiver.ShareReceiver" >
+            <intent-filter>
+                <action android:name="com.jishijiyu.takeadvantage.activity.receiver.action" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.exchangemall.ModifyAddressActivity" >
+        </activity>
+        <activity android:name=".activity.ShowGoldAnimActivity" >
+        </activity>
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.home.BannerDesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jishijiyu.takeadvantage.activity.news.MyMessageDesActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.jishijiyu.takeadvantage.receiver.UninstallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.jishijiyu.takeadvantage.activity.Main1Activity" />
+        <!-- the activity theme should be translucent and notitlebar -->
+        <activity
+            android:name="com.dlnetwork.DevNativeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.dlnetwork.DevNativeService" />
+
+        <meta-data
+            android:name="com.dlnetwork.cid"
+            android:value="default" />
+        
+        <!-- 有米添加必须的组件 -->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 有米渠道号(可选配置) 渠道号不能带空格，类型为整数 -->
+        <!-- <meta-data -->
+        <!-- android:name="YOUMI_CHANNEL" -->
+        <!-- android:value="0" > -->
+        <!-- </meta-data> -->
+        <!-- 环信 -->
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="xiaolaba2728#test001" />
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.easemob.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

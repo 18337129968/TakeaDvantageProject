@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mine_head_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#262827"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/touxiang"
+                android:textColor="#B3B3B3"
+                android:textSize="@dimen/my_basic_infomation_text_size" />
+
+            <ImageView
+                android:id="@+id/my_head_photo_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_jiantoum"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_jiantoum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mygoodsaddress_btn_more" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_nickname_layout"
+            style="@style/my_basicInfomationRelativeLayouttyle" >
+
+            <TextView
+                style="@style/my_basicInfomationStyle"
+                android:text="@string/nicheng" />
+
+            <TextView
+                android:id="@+id/nickname_text"
+                style="@style/my_basicInfomationjiantouStyle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_telnumber_layout"
+            style="@style/my_basicInfomationRelativeLayouttyle" >
+
+            <TextView
+                style="@style/my_basicInfomationStyle"
+                android:text="@string/phonenum" />
+
+            <TextView
+                android:id="@+id/phonenumber_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="@string/no_setting"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/my_basic_infomation_text_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_sex_layout"
+            style="@style/my_basicInfomationRelativeLayouttyle" >
+
+            <TextView
+                style="@style/my_basicInfomationStyle"
+                android:text="@string/xingbie" />
+
+            <TextView
+                android:id="@+id/sex_text"
+                style="@style/my_basicInfomationjiantouStyle"
+                android:drawablePadding="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_birthday_layout"
+            style="@style/my_basicInfomationRelativeLayouttyle" >
+
+            <TextView
+                style="@style/my_basicInfomationStyle"
+                android:text="@string/shengri" />
+
+            <TextView
+                android:id="@+id/birthday_text"
+                style="@style/my_basicInfomationjiantouStyle" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_job_layout"
+            style="@style/my_basicInfomationRelativeLayouttyle" >
+
+            <TextView
+                style="@style/my_basicInfomationStyle"
+                android:text="@string/zhiye" />
+
+            <TextView
+                android:id="@+id/job_text"
+                style="@style/my_basicInfomationjiantouStyle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_city_layout"
+            style="@style/my_basicInfomationRelativeLayouttyle" >
+
+            <TextView
+                style="@style/my_basicInfomationStyle"
+                android:text="@string/diqu" />
+
+            <TextView
+                android:id="@+id/city_text"
+                android:paddingLeft="58dp"
+                style="@style/my_basicInfomationjiantouStyle" 
+                android:maxLines="2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_delivery_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="#262827" >
+
+            <TextView
+                android:id="@+id/mine_address"
+                style="@style/my_basicInfomationStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/dizhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/mygoodsaddress_btn_more"
+                android:padding="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

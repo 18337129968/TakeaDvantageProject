@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableBottom="@drawable/bg_line"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="账户余额：0"
+        android:textSize="@dimen/edittext_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_consume"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="累计充值总额：0"
+                android:textSize="@dimen/edittext_size" />
+
+            <TextView
+                android:id="@+id/tv_fetchout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="广告消费总额：0"
+                android:textSize="@dimen/edittext_size" />
+
+            <TextView
+                android:id="@+id/tv_supply"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="累计提现总额：0"
+                android:textSize="@dimen/edittext_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/withdrawals_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_click2"
+                android:gravity="center"
+                android:text="提现"
+                android:textColor="@color/edittext_color"
+                android:textSize="@dimen/edittext_size" />
+
+            <TextView
+                android:id="@+id/recharge_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_click2"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@color/edittext_color"
+                android:textSize="@dimen/edittext_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

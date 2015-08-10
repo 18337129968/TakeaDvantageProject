@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/integral_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="拍币余额:200"
+        android:textColor="#A86C6B"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="中国移动话费充值50元"
+        android:textColor="#918374"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="消耗50拍币"
+        android:textColor="#AD6E6E"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/evaluation_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_phone_card_click_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <EditText
+            android:id="@+id/evaluation_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:ellipsize="none"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="请输入您的手机号"
+            android:textColor="#5E5E5E"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recharge_btn"
+        style="@style/common_red_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="25dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="50dip"
+        android:text="兑換"
+        android:textSize="15dp" />
+
+</LinearLayout>

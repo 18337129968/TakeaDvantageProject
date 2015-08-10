@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/invite_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/invite_friends_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/invite_friends"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/to_invite"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/come_btn"
+            android:gravity="center"
+            android:text="前往"
+            android:textColor="@color/about_company"
+            android:textSize="18sp"
+            
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nedd_integral_divide_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#1A1A1A"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/watch_ads_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/watch_ads_answer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/watch_ads_answer"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/watch_ads_answer_number"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/come_btn"
+            android:gravity="center"
+            android:text="前往"
+            android:textColor="@color/about_company"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/watch_ads_answer_divide_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#1A1A1A"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/improve_personal_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/prefect_information"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/come_btn"
+            android:gravity="center"
+            android:text="前往"
+            android:textColor="@color/mytask_complete"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/improve_personal_data_divide_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#1A1A1A"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/products_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/products_exchange_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/products_exchange"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/exchange_mall"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/come_btn"
+            android:gravity="center"
+            android:text="前往"
+            android:textColor="@color/mytask_complete"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/products_exchange_divide_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#1A1A1A"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/participate_in_drawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/participate_in_drawing_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/participate_in_drawing"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/emie"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/come_btn"
+            android:gravity="center"
+            android:text="前往"
+            android:textColor="@color/about_company"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/participate_in_drawing_divide_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#1A1A1A"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/get_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/get_prize_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/get_prize"
+            android:gravity="left|center_vertical"
+            android:textColor="#8E8E8E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/get_prize_number"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/come_btn"
+            android:gravity="center"
+            android:text="前往"
+            android:textColor="@color/about_company"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/get_prize_divide_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#1A1A1A"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

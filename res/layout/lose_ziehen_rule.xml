@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/user_agreement_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/agreement_title"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/about_company"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/user_agreement_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/agreement_content"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/about_company"
+                android:textSize="16dp" 
+                android:layout_below="@id/user_agreement_title"
+                />
+              <TextView
+                android:id="@+id/user_agreement_content1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:singleLine="false"
+                android:text="@string/agreement_content1"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/about_company"
+                android:textSize="16dp" 
+                android:layout_below="@id/user_agreement_content"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mymsg_grey_transparent_float"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imv_aImageView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+         android:background="@drawable/earn_points_bac"
+            android:padding="10dp" 
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_aName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imv_aImageView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_aState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/tv_aScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_aName"
+        android:layout_toRightOf="@+id/imv_aImageView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_aNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_aScore"
+        android:layout_toRightOf="@+id/imv_aImageView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_aTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_aScore"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_aNum"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

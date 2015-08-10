@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/advertising_before_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dark"
+            android:gravity="center"
+            android:text="投放前广告"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/advertising_center_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dark"
+            android:gravity="center"
+            android:text="投放中广告"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/advertising_end_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dark"
+            android:gravity="center"
+            android:text="投放后广告"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_advert_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" >
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

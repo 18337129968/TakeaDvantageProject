@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/one_rmb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/taocan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#252525"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/taocan_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="套餐A(5000人)"
+                    android:textColor="@color/joined_list_normal_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/registed_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="已报名"
+                    android:textColor="#BD435C"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/reuse_meal_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:layout_width="180dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:background="@drawable/phone_card_list_background"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/meal4_prize1_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_1" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/meal4_prize1_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:text="TextView"
+                    android:textColor="#AA8865"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/meal4_prize1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="TextView"
+                    android:textColor="#AA8865"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" >
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/phone_card_list_background"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/meal4_prize2_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_1" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/meal4_prize2_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|bottom"
+                            android:text="TextView"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/meal4_prize2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="TextView"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/phone_card_list_background"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/meal4_prize3_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_1" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/meal4_prize3_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|bottom"
+                            android:text="TextView"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/meal4_prize3_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="TextView"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/phone_card_list_background"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/meal4_prize4_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_1" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/meal4_prize4_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|bottom"
+                            android:text="TextView"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/meal4_prize4_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="TextView"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reuse_meal_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/phone_card_list_background"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/meal3_prize3_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_3" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/meal3_prize3_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|bottom"
+                            android:text="phone5"
+                            android:textColor="#AA8865" />
+
+                        <TextView
+                            android:id="@+id/meal3_prize3_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="三等奖 10人"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/phone_card_list_background"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/meal3_prize1_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_1" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/meal3_prize1_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="IPHONE6 PLUS"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/meal3_prize1_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="一等奖 1人"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/phone_card_list_background"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/meal3_prize2_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_2" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/meal3_prize2_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|bottom"
+                            android:text="phone5"
+                            android:textColor="#AA8865" />
+
+                        <TextView
+                            android:id="@+id/meal3_prize2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="二等奖 4人"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reuse_meal_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/phone_card_list_background"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/meal2_prize1_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_1"
+                                android:scaleType="fitXY" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/meal2_prize1_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="IPHONE6PLUS"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/meal2_prize1_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="一等奖 1人"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/phone_card_list_background"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/meal2_prize2_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_1"
+                                android:scaleType="fitXY" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/meal2_prize2_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="IPHONE6PLUS"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/meal2_prize2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="二等奖 5人"
+                            android:textColor="#AA8865"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reuse_meal_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:layout_width="180dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/phone_card_list_background"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/meal1_prize1_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_1" 
+                        android:scaleType="fitXY"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/meal1_prize1_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="IPHONE6PLUS"
+                    android:textColor="#AA8865"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/meal1_prize1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="一等奖 1人"
+                    android:textColor="#AA8865"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reuse_title1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="本期中奖记录"
+            android:textColor="@color/joined_list_normal_text_color"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#252525" >
+
+            <TextView
+                android:id="@+id/reuse_title2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="第二期"
+                android:textColor="@color/joined_list_normal_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/reuse_title3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="开奖时间：2015-06-03 16：30：00"
+                android:textColor="@color/joined_list_normal_text_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/join_in_room_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:text="共参加0个活动"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/my_basic_infomation_text_size" />
+
+        <TextView
+            android:id="@+id/join_in_room_statistics_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/tv_des"
+            android:text="共计:0元"
+            android:textColor="#A64857"
+            android:textSize="@dimen/my_basic_infomation_text_size" />
+
+        <Button
+            android:id="@+id/join_in_room_statistics_submit"
+            android:layout_width="80dip"
+            android:layout_height="36dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/button_filleted_corner_selecte"
+            android:text="@string/btn_pay"
+            android:textColor="@color/edittext_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/join_in_room_statistics"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/join_in_room_statistics_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#000000"
+            android:listSelector="#000000"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

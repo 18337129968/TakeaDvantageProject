@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/sp_speech"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pro_spinner"
+            android:paddingRight="50dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top"
+        android:layout_margin="10dp"
+        android:background="@drawable/earn_points"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/im_por"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_launcher" />
+
+        <EditText
+            android:id="@+id/et_por"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_toRightOf="@+id/im_por"
+            android:background="@drawable/earn_points"
+            android:hint="请输入需要分享的数据!"
+            android:lines="5"
+            android:maxLength="70"
+            android:padding="8dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_por"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_por"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/im_por2"
+            android:text="http://公司APP下载地址/渠道/用户电话136****2656/序列号"
+            android:textColor="@color/red1" />
+
+        <ImageView
+            android:id="@+id/im_por2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_por"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+</RelativeLayout>

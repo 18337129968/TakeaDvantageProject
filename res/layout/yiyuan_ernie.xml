@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:background="@drawable/yiyuan_ernie_center_bg" >
+
+                    <ImageView
+                        android:id="@+id/shake_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/shake" />
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shake1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_1"
+                        android:layout_marginTop="43dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/lock_1"
+                            android:layout_width="38dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/img_unlock_3" />
+
+                        <ImageView
+                            android:id="@+id/lock_2"
+                            android:layout_width="38dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/img_unlock_3" />
+
+                        <ImageView
+                            android:id="@+id/lock_3"
+                            android:layout_width="38dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/img_unlock_3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/img_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_1"
+                        android:layout_marginTop="-15dp"
+                        android:background="@drawable/yiyuan_ernie_center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lock_layout_1"
+                            style="@style/yiyuan_ernie_code_img" >
+
+                            <ImageView
+                                android:id="@+id/yiyuna_code_1"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lock_layout_2"
+                            style="@style/yiyuan_ernie_code_img2" >
+
+                            <ImageView
+                                android:id="@+id/yiyuna_code_2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lock_layout_3"
+                            style="@style/yiyuan_ernie_code_img2" >
+
+                            <ImageView
+                                android:id="@+id/yiyuna_code_3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lock_layout_4"
+                            style="@style/yiyuan_ernie_code_img2" >
+
+                            <ImageView
+                                android:id="@+id/yiyuna_code_4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lock_layout_5"
+                            style="@style/yiyuan_ernie_code_img2" >
+
+                            <ImageView
+                                android:id="@+id/yiyuna_code_5"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lock_layout_6"
+                            style="@style/yiyuan_ernie_code_img2" >
+
+                            <ImageView
+                                android:id="@+id/yiyuna_code_6"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/luckytry_prizeshow_frame"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_img_1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/yiyuan_img_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/bg2"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/luckytry_prizeshow_frame"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_img_2"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/yiyuan_img_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/bg2"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/luckytry_prizeshow_frame"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_img_3"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/yiyuan_img_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/bg2"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/luckytry_prizeshow_frame"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_img_4"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/yiyuan_img_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/bg2"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/luckytry_prizeshow_frame"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_img_5"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/yiyuan_img_5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/bg2"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/luckytry_prizeshow_frame"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_img_6"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/yiyuan_img_6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/bg2"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_10"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_20"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_9"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_19"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_8"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_18"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_7"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_17"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_7"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_8"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_9"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_9"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_10"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_10"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="horizontal" >
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_6"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_16"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_5"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_15"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_4"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_14"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_3"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_13"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_2"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_12"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/luckytry_prizeshow_frame"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_img_1"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/yiyuan_img_11"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg2" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8"
+            android:background="@drawable/box"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_frame"
+                    android:gravity="center"
+                    android:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_drop" />
+
+                <TextView
+                    android:id="@+id/tv_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_frame"
+                    android:gravity="center"
+                    android:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_drop" />
+
+                <TextView
+                    android:id="@+id/tv_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_frame"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_gui_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/point"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/center"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

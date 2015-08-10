@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/suggestions_opinion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="3dp"
+        android:singleLine="true"
+        android:text="@string/suggestions_opinion"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/about_agreement_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_line"
+        android:gravity="center_vertical"
+        android:scaleType="centerInside" />
+
+    <EditText
+        android:id="@+id/edit_comments"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="@string/input_comments"
+        android:padding="5dp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_line"
+        android:gravity="center_vertical"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/recharge_btn"
+        style="@style/common_red_button"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="25dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/btn_click2"
+        android:text="提交"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/service_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center|right"
+        android:singleLine="true"
+        android:text="@string/service_tel"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pop_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#99000000">
+    <Button 
+        android:id="@+id/btn_delete_news"
+        android:layout_width="140dip"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        android:text="删除消息"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:background="@drawable/popwin_btn_click"/>
+
+</RelativeLayout>

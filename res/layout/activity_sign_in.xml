@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/myhead" />
+
+    <Button
+        android:id="@+id/iv_sign_in_add7"
+        android:layout_width="88dip"
+        android:layout_height="36dip"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/sign_in_no"
+        android:text="@string/integral5"
+        android:textColor="@color/white"
+        android:clickable="false"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="88dip"
+        android:layout_height="36dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dip"
+        android:background="@drawable/btn_bottom"
+        android:text="@string/today_sign_in"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_sign_in"
+        android:layout_below="@id/iv_sign_in_add7"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_in_6"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_red_grey_left"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch_gray6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_grey_left" />
+
+            <Button
+                android:id="@+id/iv_sign_in_add6"
+                android:layout_width="88dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_sign_in_branch6"
+                android:background="@drawable/sign_in_no"
+                android:text="@string/integral3"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_in_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_red_grey_right"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch_gray5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_grey_right" />
+
+            <Button
+                android:id="@+id/iv_sign_in_add5"
+                android:layout_width="88dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_sign_in_branch5"
+                android:background="@drawable/sign_in_no"
+                android:text="@string/integral3"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_in_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_red_grey_left"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch_gray4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_grey_left" />
+
+            <Button
+                android:id="@+id/iv_sign_in_add4"
+                android:layout_width="88dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_sign_in_branch4"
+                android:background="@drawable/sign_in_no"
+                android:text="@string/integral2"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"  />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_in_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_red_grey_right"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch_gray3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_grey_right" />
+
+            <Button
+                android:id="@+id/iv_sign_in_add3"
+                android:layout_width="88dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_sign_in_branch3"
+                android:background="@drawable/sign_in_no"
+                android:text="@string/integral2"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"  />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_in_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_red_grey_left"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch_gray2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_grey_left" />
+
+            <Button
+                android:id="@+id/iv_sign_in_add2"
+                android:layout_width="88dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_sign_in_branch2"
+                android:background="@drawable/sign_in_no"
+                android:text="@string/integral1"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"  />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_in_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_red_grey_right"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_sign_in_branch_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sign_branch_grey_right" />
+
+            <Button
+                android:id="@+id/iv_sign_in_add1"
+                android:layout_width="88dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_sign_in_branch1"
+                android:background="@drawable/sign_in_no"
+                android:text="@string/integral1"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"  />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

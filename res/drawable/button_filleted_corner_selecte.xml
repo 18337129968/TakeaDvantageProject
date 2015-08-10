@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/button_filleted_corner_nomal" android:state_pressed="false" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/button_filleted_corner_checked" android:state_pressed="true" android:state_window_focused="true"/>
+    <item android:drawable="@drawable/button_filleted_corner_checked" android:state_selected="true"/>
+    <item android:drawable="@drawable/button_filleted_corner_checked" android:state_focused="true"/>
+
+</selector>

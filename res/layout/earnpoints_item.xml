@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="145dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/earn_points_bac"
+    android:paddingBottom="8dp" >
+
+    <TextView
+        android:id="@+id/earn_points_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/img_black_tiao"
+        android:gravity="center"
+        android:maxEms="11"
+        android:singleLine="true"
+        android:textColor="@color/zjf_gridview_item_title_color"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/earn_points_picture"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/earn_points_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/earn_points_number"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/earn_points_picture"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/img_black_tiao"
+        android:gravity="center|right"
+        android:paddingRight="5dp"
+        android:textColor="@color/zjf_gridview_item_textcolor"
+        android:textSize="16sp" />
+
+</RelativeLayout>

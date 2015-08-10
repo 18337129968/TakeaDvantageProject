@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/ll_integral_statictics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_integral_statictics_get"
+            android:layout_width="0dip"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_integral_top_selecte"
+            android:text="@string/get_integral"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_integral_statictics_consume"
+            android:layout_width="0dip"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_integral_top_selecte"
+            android:text="@string/used_integral"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_integral_statictics_des"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+</LinearLayout>

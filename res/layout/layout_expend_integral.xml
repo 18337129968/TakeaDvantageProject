@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="用户当前所剩拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/user_present_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="600"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/background_color" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="广告任务获得拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/adver_task_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="60"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="应用任务获得拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/application_task_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="70"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="邀请好友获得拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/invite_friend_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="45"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="签到获得拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/sign_in_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="32"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="系统赠送获得拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/system_present_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="总共获得拍币"
+            android:textSize="@dimen/edittext_size" />
+
+        <TextView
+            android:id="@+id/all_get_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="500"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittext_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lock_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/lock_dialog_text"
+            android:text="当前剩余金币" />
+
+        <TextView
+            android:id="@+id/tv_lock_invitaion_num"
+            style="@style/lock_dialog_text"
+            android:text="0" />
+
+        <TextView
+            style="@style/lock_dialog_text"
+            android:text="金币" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/lock_dialog_text2"
+            android:text="可兑换铜锁" />
+
+        <TextView
+            android:id="@+id/tv_lock_num"
+            style="@style/lock_dialog_text2"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tv_lock_rule"
+            style="@style/lock_dialog_text2"
+            android:text="把（10金币=1把）" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/btn_add_selector" />
+
+        <TextView
+            android:id="@+id/edt_lock_num"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/lock_dialog_tv_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/lock_dialog_text3" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@anim/btn_del_selector" />
+
+        <Button
+            android:id="@+id/btn_invitation_conversion"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@anim/btn_selector"
+            android:text="取消"
+            android:textColor="@color/lock_dialog_text2" />
+
+        <Button
+            android:id="@+id/btn_gold_conversion"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@anim/btn_selector"
+            android:text="金币兑换"
+            android:textColor="@color/lock_dialog_text2" />
+    </LinearLayout>
+
+</LinearLayout>

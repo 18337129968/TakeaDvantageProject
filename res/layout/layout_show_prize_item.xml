@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="120dip"
+        android:layout_margin="16dip"
+        android:layout_weight="1"
+        android:background="@drawable/img_show_box" >
+
+        <ImageView
+            android:id="@+id/iv_prize_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dip"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_prize_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="16dip"
+            android:layout_weight="1"
+            android:background="@drawable/i6"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:maxWidth="20dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_prize_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="#88ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_prize_item_des"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:gravity="top"
+            android:maxLines="4"
+            android:textColor="#88ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

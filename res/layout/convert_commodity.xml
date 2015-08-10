@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <TextView
+        android:id="@+id/from_which_exchange_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="@string/from_which_exchange_goods"
+        android:textSize="20sp" 
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/any_specified_manufacturer"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/from_which_exchange_goods"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/frame_"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/any_specified_manufacturer"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/how_exchange_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/any_specified_manufacturer"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="@string/how_exchange_goods"
+        android:textSize="20sp" 
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/how_exchange_goods_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/how_exchange_goods"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/frame_"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/any_specified_manufacturer"
+        android:textSize="18sp" />
+
+</RelativeLayout>

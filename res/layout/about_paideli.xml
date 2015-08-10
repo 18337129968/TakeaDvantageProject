@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/zxgw"
+            android:gravity="center"
+            android:text="官方微信：123456" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_product_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/chosed_column"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/about_product_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_question_more"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/about_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/about_product_arrow"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/about_product"
+            android:textColor="@color/about_paideli"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_company_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/chosed_column"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/about_company_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_question_more"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/about_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/about_company_arrow"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/about_company"
+            android:textColor="@color/about_paideli"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_agreement_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/chosed_column"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/about_agreement_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_question_more"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/about_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/about_agreement_arrow"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/about_agreement"
+            android:textColor="@color/about_paideli"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_qq"
+            android:layout_alignParentLeft="true"
+            android:text="客服QQ：1111111111"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_tele"
+            android:layout_alignParentRight="true"
+            android:text="客服邮箱：123456@123.com"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="客服QQ群：123123123"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_tele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="客服电话:010_123123123"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

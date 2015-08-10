@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color" >
+
+    <include
+        android:id="@+id/app_head"
+        layout="@layout/myhead" />
+
+    <ListView
+        android:id="@+id/my_news_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_head"
+        android:divider="#141414"
+        android:dividerHeight="2px"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</RelativeLayout>

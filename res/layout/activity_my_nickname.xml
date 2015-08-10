@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <EditText
+        android:id="@+id/nickname_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/nickname_hint"
+        android:maxLength="10"
+        android:paddingLeft="@dimen/edittext_padding_left_size"
+        android:paddingRight="@dimen/edittext_padding_right_size"
+        android:singleLine="true"
+        android:textColor="@color/questions_text_color"
+        android:textSize="@dimen/edittext_size" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/nickname_redhint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nickname_edittext"
+        android:layout_below="@+id/nickname_edittext"
+        android:layout_marginTop="5dp"
+        android:text="@string/nickname_redhint_text"
+        android:textColor="#9C394C" />
+
+    <TextView
+        android:id="@+id/btn_nickname_save"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/nickname_redhint_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_click2"
+        android:gravity="center"
+        android:text="@string/nickname_savebtn_text"
+        android:textColor="@color/edittext_color"
+        android:textSize="@dimen/edittext_size" />
+
+    <ImageView
+        android:id="@+id/btn_nickname_clearup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nickname_edittext"
+        android:layout_alignRight="@+id/nickname_edittext"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/btn_nickname_clearup" />
+
+</RelativeLayout>

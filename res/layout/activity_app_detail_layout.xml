@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+            <TextView android:id="@+id/tv_name" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="#44aaaaaa"
+                      android:padding="6dip"
+                      android:gravity="center"
+                      android:textSize="22dip"
+                      android:text="广告名称"
+                    ></TextView>
+            <TextView android:id="@+id/tv_title" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="#44cccccc"
+                      android:padding="4dip"
+                      android:text="广告宣传语"
+                      android:textSize="18dip"
+                      android:gravity="center"></TextView>
+
+            <TextView android:id="@+id/tv_desc" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="6dip"
+                      android:text="广告介绍"></TextView>
+
+            <TextView android:id="@+id/tv_cate" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="#44cccccc"
+                      android:padding="4dip"
+                      android:text="试用获取10拍币"
+                      android:textSize="16dip"
+                      android:gravity="center"></TextView>
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_download"
+                    android:layout_marginTop="10dip"
+                    android:text="立即下载安装"></Button>
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

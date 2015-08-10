@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bottom_btn_text_size">16sp</dimen>
+      <dimen name="qnswer_height_size">255dp</dimen>
+    <dimen name="qnswer_hanswer_size">195dp</dimen>
+
+</resources>

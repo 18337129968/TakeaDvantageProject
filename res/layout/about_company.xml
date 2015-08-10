@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/agreement_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/about_company_title"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/about_company"
+                android:textSize="16sp" />
+
+            <com.jishijiyu.takeadvantage.view.JustifyTextView
+                android:id="@+id/about_company_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agreement_content"
+                android:bufferType="normal"
+                android:singleLine="false"
+                android:text="@string/about_company_detail"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/about_company"
+                android:textSize="16sp" 
+                android:lineSpacingExtra="6dp"
+                />
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

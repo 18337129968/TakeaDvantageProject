@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/order_waybill_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/order_inquiry_img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/earn_points_bac"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_inquiry_img"
+            android:layout_alignTop="@id/order_inquiry_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/order_inquiry_img"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/consume_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/commodity_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_waybill_number"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:id="@+id/send_order_detail_li"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/waybill_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#838283"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/expressage_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#838283"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/bill_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#838283"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/firm_order_btn"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@id/send_order_detail_li"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_light_incolor"
+            android:singleLine="true"
+            android:text="确认收货"
+            android:textColor="#DEB3AC"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

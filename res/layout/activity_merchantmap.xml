@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/mylocationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView 
+            android:id="@+id/merchantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="商家："/>
+        <TextView 
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="坐标"/>
+        <Button 
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@anim/dialog_btn_selector"
+            android:text="保存"/>
+    </RelativeLayout>
+    <com.baidu.mapapi.map.MapView 
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+    </com.baidu.mapapi.map.MapView>
+
+</LinearLayout>

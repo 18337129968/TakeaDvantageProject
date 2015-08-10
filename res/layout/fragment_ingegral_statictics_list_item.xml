@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_integral__statictics_item_title"
+        android:layout_width="0dip"
+        android:layout_height="48dip"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="广告任务获得拍币"
+        android:textColor="#99ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_integral__statictics_item_count"
+        android:layout_width="0dip"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dip"
+        android:text="60"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

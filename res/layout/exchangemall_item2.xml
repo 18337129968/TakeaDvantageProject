@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/ig_eImageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/earn_points_bac"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_eName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ig_eImageview"
+        android:text="IPHONE6 PULS"
+        android:textColor="@color/wheat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_eIntegral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_eName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/ig_eImageview"
+        android:text="500拍币" />
+
+    <TextView
+        android:id="@+id/tv_eUserNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_eIntegral"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/ig_eImageview"
+        android:text="已兑换32个" />
+
+    <TextView
+        android:id="@+id/tv_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_eName"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_lijiduihuan" />
+
+</RelativeLayout>
